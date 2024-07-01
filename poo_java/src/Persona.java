@@ -1,10 +1,9 @@
 public class Persona {
 
     //Atributos (estado/caracteristicas de un objeto)
-    String nombre;
-    String apellido;
-    int edad;
-    Carrera carrera;
+    private String nombre;
+    private String apellido;
+    private int edad;
 
     //Constructores
 
