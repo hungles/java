@@ -1,4 +1,4 @@
-public class Circulo extends Figura{
+public class Circulo implements Figura, Dibujar, Rotar{
     
     double radio;
 
@@ -6,8 +6,7 @@ public class Circulo extends Figura{
 
     }
     
-    public Circulo(double radio, double x, double y){
-        super(x,y);
+    public Circulo(double radio){
         this.radio = radio;
     }
 
@@ -16,5 +15,13 @@ public class Circulo extends Figura{
         double pi = 3.14;
         double resultado = (radio * radio) * pi;
         return resultado;
+    }
+
+    public String dibujable(){
+        return "Es dibujable";
+    }
+
+    public String rotable(){
+        return "Es rotable";
     }
 }

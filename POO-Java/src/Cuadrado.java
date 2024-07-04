@@ -1,4 +1,4 @@
-public class Cuadrado extends Figura{
+public class Cuadrado implements Figura, Dibujar{
     
     private double lado;
 
@@ -6,8 +6,7 @@ public class Cuadrado extends Figura{
 
     }
     
-    public Cuadrado(double lado, double x, double y){
-        super(x,y);
+    public Cuadrado(double lado){
         this.lado = lado;
     }
     
@@ -16,5 +15,9 @@ public class Cuadrado extends Figura{
     public double calcularArea(){
         double resultado = lado * lado;
         return resultado;
+    }
+
+    public String dibujable(){
+        return "Es dibujable";
     }
 }
